@@ -18,7 +18,7 @@ This terrible bot was created for Discord Hack Week 2019 by me and submitted in 
 |   hug   | | Hugs your partner. |  
 |  kiss   | | Kisses your partner. |  
 | reject  | \<user> <!-- <ul><li>user -  mention a user to reject.</li></ul> --> | Rejects the user. |  
-|  steal  | \<user> <!-- <ul><li>user - mention a user to steal.</li></ul> --> | Attempts to steal a someone from their partner. <br> TL;DR: be a dick to increase your chances of stealing <br> Probability is determined by the following formula and dependent on the user's hidden stats: `probability = .01 + stolenCount / 500 + dateCount / 2000 + (rejectedYouCount + rejectedOthersCount) / 10000;` |  
+|  steal  | \<user> <!-- <ul><li>user - mention a user to steal.</li></ul> --> | Attempts to steal a someone from their partner. <!-- <br> --> TL;DR: be a dick to increase your chances of stealing <!-- <br> --> Probability is determined by the following formula and dependent on the user's hidden stats: `probability = .01 + stolenCount / 500 + dateCount / 2000 + (rejectedYouCount + rejectedOthersCount) / 10000;` |  
 |  view   | \<user> <!-- <ul><li>user - mention a user to view their profile.</li></ul> --> | View someone's profile. |  
 
 ## Build
