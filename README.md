@@ -3,7 +3,9 @@ Did you ever want to partake in dating simulator within Discord? Well now you ca
 Mingle allows you to build a your own dating profile on Discord and get started on dating with others on the same server. Not only can you mingle with others, but you can also be a dick by trying to snatch other people's partners. Good luck and enjoy! *Love is in the air...*
 
 
-This terrible bot was created for Discord Hack Week 2019 by me and submitted in the shitposting category.
+This terrible bot was created for Discord Hack Week 2019 by me and submitted in the shitposting category.  
+[`Join the server`](https://discord.gg/JPsw26j)  
+[`Invite the bot`](https://discordapp.com/oauth2/authorize?client_id=594180000886816787&scope=bot&permissions=117824)
 
 ## Commands
 Default prefix is `!` but can be changed in `config.js`.  
