@@ -10,7 +10,7 @@ require('./initialize');
 
 client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}`);
-    // client.user.setActivity('Games!');
+    client.user.setActivity('Chika Dance', { type: 'WATCHING' });
     client.guilds.forEach((value, key, map) => {
         Profiles.addGuild(value.id);
     });
