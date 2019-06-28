@@ -6,6 +6,7 @@ Mingle allows you to build a your own dating profile on Discord and get started 
 This terrible bot was created for Discord Hack Week 2019 by me and submitted in the shitposting category.
 
 ## Commands
+Default prefix is `!` but can be changed in `config.js`.  
 *Disclaimer: Descriptions of commands provided here are different and more accurate than the descriptions when running the bot.*  
 
 | Command | Parameters | Descriptions|
@@ -13,16 +14,16 @@ This terrible bot was created for Discord Hack Week 2019 by me and submitted in 
 | change  | \<category> \<value> <ul><li>category - a category can be one of the following: name, gender, age, description, hobbies, type, or sexuality.</li><li>value - the new value of the category. </li></ul> | Changes a category in your profile. |
 | create  | | Creates your profile by asking a few questions about you. |
 |  date   | \<user> \<message?>  <ul><li>user - mention a user to date. </li><li>message (optional) - Send a custom message with your proposal. Default is "Will you go out with me? 😘"</li></ul> | Creates a proposal to someone to ask them out. |
-| delete  | | Deletes your profile. |
+| delete  | | Deletes your profile and dumps your partner if they exist. |
 |  dump   | | Dumps your partner. |
 |  help   | | Shows available commands. |
-|   hug   | | Hugs your partner. |
-|  kiss   | | Kisses your partner. |
-| reject  | \<user> <ul><li>user -  mention a user to reject.</li></ul> | Rejects the user. |
+|   hug   | | Hugs your partner. Has 10% chance of having a special message added onto it. |
+|  kiss   | | Kisses your partner. Has 10% chance of having a special message added onto it. |
+| reject  | \<user> <ul><li>user -  mention a user to reject.</li></ul> | Rejects the user. Has 10% chance of adding an explanation that `<o/` is a dab. |
 |  steal  | \<user> <ul><li>user - mention a user to steal.</li></ul> | Attempts to steal a someone from their partner. <br> TL;DR: be a dick to increase your chances of stealing <br> Probability is determined by the following formula and dependent on the user's hidden stats: `probability = .01 + stolenCount / 500 + dateCount / 2000 + (rejectedYouCount + rejectedOthersCount) / 10000;` |
 |  view   | \<user> <ul><li>user - mention a user to view their profile.</li></ul> | View someone's profile. |
 
-## Build
+## Installation
 Type the following in command prompt:
 ```shell
 git clone https://github.com/MiniDomo/Mingle.git
