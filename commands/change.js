@@ -3,6 +3,10 @@
 const Config = require('../config');
 const Profiles = require('../profiles');
 
+const fix = string => {
+    return string[0].toUpperCase() + string.substr(1);
+};
+
 module.exports = {
     name: 'change',
     desc: 'Change a category in your profile.',
@@ -40,7 +44,7 @@ module.exports = {
         const userProfile = Profiles.getUser(guildId, userId);
         const copy = args.slice();
         const category = copy.shift().toLowerCase();
-        userProfile[category] = copy.join(' ');
+        userProfile[category] = fix(copy.join(' '));
         msg.channel.send('Your profile has been changed. :information_desk_person:');
     }
 };

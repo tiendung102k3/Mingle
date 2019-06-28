@@ -4,6 +4,10 @@ const Config = require('../config');
 const Profiles = require('../profiles');
 const Discord = require('discord.js');
 
+const fix = string => {
+    return string[0].toUpperCase() + string.substr(1);
+};
+
 module.exports = {
     name: 'create',
     desc: 'Create your profile.',
@@ -48,31 +52,31 @@ module.exports = {
                 collector.on('collect', userMsg => {
                     switch (count) {
                         case 0:
-                            user.name = userMsg.content;
+                            user.name = fix(userMsg.content);
                             userMsg.author.send(':man: What is your gender? :woman:');
                             break;
                         case 1:
-                            user.gender = userMsg.content;
+                            user.gender = fix(userMsg.content);
                             userMsg.author.send(':baby: How old are you? :older_man:');
                             break;
                         case 2:
-                            user.age = userMsg.content;
+                            user.age = fix(userMsg.content);
                             userMsg.author.send(':hushed: Please describe yourself in a few sentences.');
                             break;
                         case 3:
-                            user.description = userMsg.content;
+                            user.description = fix(userMsg.content);
                             userMsg.author.send(':video_game: What are your hobbies? :art: ');
                             break;
                         case 4:
-                            user.hobbies = userMsg.content;
+                            user.hobbies = fix(userMsg.content);
                             userMsg.author.send(':dollar: What types of people are you interested in? :prince: ');
                             break;
                         case 5:
-                            user.type = userMsg.content;
+                            user.type = fix(userMsg.content);
                             userMsg.author.send(':girl: :boy: What sexuality are you? :bear:');
                             break;
                         case 6:
-                            user.sexuality = userMsg.content;
+                            user.sexuality = fix(userMsg.content);
                             userMsg.author.send(`:grin: Thank you for answering these questions! Your profile will now be added to **${msg.guild.name}**.`);
                             collector.stop();
                             break;
