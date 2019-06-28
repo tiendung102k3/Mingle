@@ -37,7 +37,7 @@ module.exports = {
             .setColor('#dfc4f6')
             .setTitle('Hug Cam')
             .setDescription(`${userProfile.name} ${msg.author} gave a big huggy wuggy :hugging: :hugging: to ${partnerProfile.name} ${partner} :yum:...`
-                + `Kawaii!!! :cat:\n\n${chance ? ':sweat_drops: :flushed: Ummm... Let\'s not talk about this...pls' : ''}`);
+                + `Kawaii!!! :cat:\n\n${chance ? `Omega-good job :wink: :thumbsup: - Chika the Love Expert` : ''}`);
         msg.channel.send(embed);
     }
 };
