@@ -1,2 +1,4 @@
 node_modules/
-*.txt
+config.js
+profiles.json
+test.md
