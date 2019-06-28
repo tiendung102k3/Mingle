@@ -3,6 +3,7 @@
 const Config = require('../config');
 const Profiles = require('../profiles');
 const Discord = require('discord.js');
+const Moment = require('moment');
 
 const fix = string => {
     return string[0].toUpperCase() + string.substr(1);
@@ -30,13 +31,13 @@ module.exports = {
                 const userId = msg.author.id;
                 Profiles.addUser(guildId, userId);
                 const user = Profiles.getUser(guildId, userId);
-                user.name = '';
-                user.gender = '';
-                user.age = '';
-                user.description = '';
-                user.hobbies = '';
-                user.type = '';
-                user.sexuality = '';
+                user.name = 'Not specified';
+                user.gender = 'Not specified';
+                user.age = 'Not specified';
+                user.description = 'Not specified';
+                user.hobbies = 'Not specified';
+                user.type = 'Not specified';
+                user.sexuality = 'Not specified';
                 user.stats = {
                     current: null,
                     dates: 0,
@@ -87,7 +88,7 @@ module.exports = {
                     if (!user.name || !user.gender || !user.age || !user.description || !user.hobbies || !user.type || !user.sexuality) {
                         userMsg.author.send(`:octagonal_sign: This session has it's maximum time of 10 minutes. :cop: Due to your profile being incomplete, it will not be added. Please try again if you wish to create your profile. :arrows_counterclockwise:`);
                         Profiles.removeUser(guildId, userId);
-                        console.log(`Profile incomplete, removed ${msg.author.username} from ${msg.guild.name}`);
+                        console.log(`[${Moment().format('hh:mm:ss A')}] Profile incomplete, removed ${msg.author.username} from ${msg.guild.name}`);
                     }
                 });
             });

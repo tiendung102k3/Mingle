@@ -2,14 +2,15 @@
 
 const Profiles = require('./profiles.json');
 
+const Moment = require('moment');
 const fs = require('fs');
 
 const pf = {};
 
 pf.save = () => {
-    console.log('Saving profiles.json');
+    console.log(`[${Moment().format('hh:mm:ss A')}] Saving profiles.json`);
     fs.writeFileSync('./profiles.json', JSON.stringify(Profiles, null, 2), {});
-    console.log('Successfully saved profiles.json');
+    console.log(`[${Moment().format('hh:mm:ss A')}] Successfully saved profiles.json`);
 };
 
 pf.getGuild = guildId => Profiles[guildId];

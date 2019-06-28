@@ -4,6 +4,7 @@ const Discord = require('discord.js');
 const Config = require('./config');
 const Profiles = require('./profiles');
 const Handler = require('./handler');
+const Moment = require('moment');
 const client = new Discord.Client();
 
 require('./initialize');
@@ -19,7 +20,6 @@ client.once('ready', () => {
 client.on('message', msg => {
     if (msg.author.bot || !msg.guild)
         return;
-    console.log(`<${msg.author.username}> ${msg.content}`);
     if (msg.content.startsWith(Config.prefix)) {
         const obj = Handler.getArgs(msg.content);
         Handler.handle(msg, obj);
@@ -36,6 +36,7 @@ const exit = () => {
 process.on('SIGTERM', exit);
 process.on('SIGINT', exit);
 process.on('uncaughtException', err => {
+    console.log(Moment().format('[hh:mm:ss A]'));
     console.error(err);
     exit();
 });
