@@ -36,8 +36,8 @@ module.exports = {
         const embed = new Discord.RichEmbed()
             .setColor('#fbe0d2')
             .setTitle('Kiss Cam')
-            .setDescription(`${userProfile.name} ${msg.author} blew a kiss :kissing_closed_eyes: to ${partnerProfile.name} ${partner} :blush:~~\n:couplekiss: Awwww... How romantic!!!`
-                + `\n${chance ? ':poop: oops, I did it again...my bad :rolling_eyes:' : ''}`);
+            .setDescription(`${userProfile.name} ${msg.author} blew a kiss :kissing_closed_eyes: to ${partnerProfile.name} ${partner} :blush:~~\n\n:couplekiss: Awwww... How romantic!!!`
+                + `\n\n${chance ? ':poop: oops, I did it again...my bad :rolling_eyes:' : ''}`);
         msg.channel.send(embed);
     }
 };

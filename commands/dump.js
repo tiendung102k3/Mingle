@@ -35,7 +35,7 @@ module.exports = {
         partnerProfile.stats.current = null;
         partnerProfile.stats.rejectedYou++;
         const description = `${userProfile.name} ${msg.author} just dumped ${partnerProfile.name} ${partner}!!!` +
-            `\nThis is so sad. :weary: Alexa, play despacito :musical_note:`;
+            `\n\nThis is so sad. :weary: Alexa, play despacito :musical_note:`;
         const embed = new Discord.RichEmbed()
             .setColor('#ff403a')
             .setTitle(':newspaper: News')

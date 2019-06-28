@@ -19,6 +19,15 @@ module.exports = {
     execute(msg, obj) {
         const guildId = msg.guild.id;
         const userId = msg.author.id;
+        const userPf = Profiles.getUser(guildId, userId);
+        if (userPf.stats.current) {
+            const partnerId = userPf.stats.current;
+            const partnerProfile = Profiles.getUser(guildId, partnerId);
+            userPf.stats.current = null;
+            userPf.stats.rejectedOthers++;
+            partnerProfile.stats.current = null;
+            partnerProfile.stats.rejectedYou++;
+        }
         Profiles.removeUser(guildId, userId);
         msg.channel.send(`Your profile has been deleted. :frowning2:`);
     }

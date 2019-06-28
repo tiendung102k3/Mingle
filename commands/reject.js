@@ -50,7 +50,7 @@ module.exports = {
         const otherPf = Profiles.getUser(guildId, otherId);
         userProfile.stats.rejectedOthers++;
         otherPf.stats.rejectedYou++;
-        const chance = Math.random() < .05;
+        const chance = Math.random() < .3;
         const embed = new Discord.RichEmbed()
             .setColor('#8d698d')
             .setTitle('No Chill')
