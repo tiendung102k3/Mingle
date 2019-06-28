@@ -8,7 +8,7 @@ This terrible bot was created for Discord Hack Week 2019 by me and submitted in 
 ## Commands
 *Disclaimer: Descriptions of commands provided here are different and more accurate than the descriptions when running the bot.*  
 | Command | Parameters | Descriptions|  
-| :-: | - | - |  
+| - | - | - |  
 | change  | \<category> \<value> <ul><li>category - a category can be one of the following: name, gender, age, description, hobbies, type, or sexuality.</li><li>value - the new value of the category. </li></ul> | Changes a category in your profile. |  
 | create  | | Creates your profile by asking a few questions about you. |  
 |  date   | \<user> \<message?> <ul><li>user - mention a user to date. </li><li>message (optional) - Send a custom message with your proposal. Default is "Will you go out with me? 😘"</li></ul> | Creates a proposal to someone to ask them out. |  
