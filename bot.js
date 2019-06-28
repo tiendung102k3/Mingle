@@ -17,9 +17,9 @@ client.once('ready', () => {
 });
 
 client.on('message', msg => {
-    console.log(`<${msg.author.username}> ${msg.content}`);
     if (msg.author.bot || !msg.guild)
         return;
+    console.log(`<${msg.author.username}> ${msg.content}`);
     if (msg.content.startsWith(Config.prefix)) {
         const obj = Handler.getArgs(msg.content);
         Handler.handle(msg, obj);
