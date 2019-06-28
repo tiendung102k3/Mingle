@@ -36,7 +36,7 @@ const exit = () => {
 process.on('SIGTERM', exit);
 process.on('SIGINT', exit);
 process.on('uncaughtException', err => {
-    console.log(Moment().format('[hh:mm:ss A]'));
+    console.log(`[${Moment().format('hh:mm:ss A')}]`);
     console.error(err);
     exit();
 });
