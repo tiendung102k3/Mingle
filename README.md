@@ -4,7 +4,7 @@ Mingle allows you to build a your own dating profile on Discord and get started 
 
 
 This terrible bot was created for Discord Hack Week 2019 by me and submitted in the shitposting category.  
-[`Join the server`](https://discord.gg/JPsw26j)  
+[`Join the test server`](https://discord.gg/JPsw26j)  
 [`Invite the bot`](https://discordapp.com/oauth2/authorize?client_id=594180000886816787&scope=bot&permissions=117824)
 
 ## Commands
