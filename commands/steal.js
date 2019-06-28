@@ -67,9 +67,9 @@ module.exports = {
             let partnerPf = Profiles.getUser(guildId, partnerId);
             partnerPf.stats.current = null;
             partnerPf.stats.rejectedYou++;
-            otherPf.stats.current = userId;
             otherPf.stats.rejectedOthers++;
             description += `:heart_eyes: ${otherPf.name} fell for ${userProfile.name} and dumped ${partnerPf.name} ${partner}! :open_mouth:\n`;
+            otherPf.stats.current = userId;
             if (userProfile.stats.current) {
                 partnerId = userProfile.stats.current;
                 partner = msg.guild.members.get(partnerId).user;
@@ -80,6 +80,7 @@ module.exports = {
                 userProfile.stats.rejectedOthers++;
                 description += `${userProfile.name} dumped :rotating_light: ${partnerPf.name} ${partner} just to get ${otherPf.name}! What an animal! :bear:`;
             }
+            embed.setDescription(description);
         } else {
             embed.setDescription(`:stuck_out_tongue_winking_eye: ${userProfile.name} ${msg.author} used steal on ${otherPf.name} ${other}.\nBut it failed...:flag_white:`);
         }
