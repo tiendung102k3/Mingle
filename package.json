@@ -1,5 +1,5 @@
 {
-  "name": "hackweek",
+  "name": "mingle",
   "version": "1.0.0",
   "description": "",
   "main": "bot.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MiniDomo/hackweek.git"
+    "url": "git+https://github.com/MiniDomo/Mingle.git"
   },
   "author": "minidomo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MiniDomo/hackweek/issues"
+    "url": "https://github.com/MiniDomo/Mingle/issues"
   },
-  "homepage": "https://github.com/MiniDomo/hackweek#readme",
+  "homepage": "https://github.com/MiniDomo/Mingle#readme",
   "dependencies": {
     "discord.js": "^11.5.1"
   }
