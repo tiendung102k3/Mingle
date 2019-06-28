@@ -19,7 +19,7 @@ Default prefix is `!` but can be changed in `config.js`.
 |  help   | | Shows available commands. |
 |   hug   | | Hugs your partner. Has 10% chance of having a special message added onto it. |
 |  kiss   | | Kisses your partner. Has 10% chance of having a special message added onto it. |
-| reject  | \<user> <ul><li>user -  mention a user to reject.</li></ul> | Rejects the user. Has 10% chance of adding an explanation that `<o/` is a dab. |
+| reject  | \<user> <ul><li>user -  mention a user to reject.</li></ul> | Rejects the user. Has 30% chance of adding an explanation that `<o/` is a dab. |
 |  steal  | \<user> <ul><li>user - mention a user to steal.</li></ul> | Attempts to steal a someone from their partner. <br> TL;DR: be a dick to increase your chances of stealing <br> Probability is determined by the following formula and dependent on the user's hidden stats: `probability = .01 + stolenCount / 500 + dateCount / 2000 + (rejectedYouCount + rejectedOthersCount) / 10000;` |
 |  view   | \<user> <ul><li>user - mention a user to view their profile.</li></ul> | View someone's profile. |
 
