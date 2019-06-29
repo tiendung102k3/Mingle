@@ -8,7 +8,7 @@ const userRegex = /^<@!?(\d+)>$/;
 
 module.exports = {
     name: 'date',
-    desc: 'Form a relationship with someone.',
+    desc: 'Propose to someone.',
     usage: 'date <user> <message?>',
     validate(msg, { args }) {
         if (args.length < 1) {
