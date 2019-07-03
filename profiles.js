@@ -1,6 +1,7 @@
 'use strict';
 
 const Profiles = require('./profiles.json');
+const Logger = require('./logger');
 
 const Moment = require('moment');
 const fs = require('fs');
@@ -8,9 +9,9 @@ const fs = require('fs');
 const pf = {};
 
 pf.save = () => {
-    console.log(`[${Moment().format('hh:mm:ss A')}] Saving profiles.json`);
+    Logger.log('Saving profiles.json');
     fs.writeFileSync('./profiles.json', JSON.stringify(Profiles, null, 2), {});
-    console.log(`[${Moment().format('hh:mm:ss A')}] Successfully saved profiles.json`);
+    Logger.log('Succesfully saved profiles.json');
 };
 
 pf.getGuild = guildId => Profiles[guildId];

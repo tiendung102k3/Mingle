@@ -4,8 +4,6 @@ Mingle allows you to build a your own dating profile on Discord and get started 
 
 
 This terrible bot was created for Discord Hack Week 2019 by me and submitted in the shitposting category.  
-[`Join the test server`](https://discord.gg/JPsw26j)  
-[`Invite the bot`](https://discordapp.com/oauth2/authorize?client_id=594180000886816787&scope=bot&permissions=117824)
 
 ## Commands
 Default prefix is `!` but can be changed in `config.js`.  
@@ -13,17 +11,17 @@ Default prefix is `!` but can be changed in `config.js`.
 
 | Command | Parameters | Descriptions|
 | :---: | --- | --- |
-| change  | \<category> \<value> <ul><li>category - a category can be one of the following: name, gender, age, description, hobbies, type, or sexuality.</li><li>value - the new value of the category. </li></ul> | Changes a category in your profile. |
-| create  | | Creates your profile by asking a few questions about you. |
-|  date   | \<user> \<message?>  <ul><li>user - mention a user to date. </li><li>message (optional) - Send a custom message with your proposal. Default is "Will you go out with me? 😘"</li></ul> | Creates a proposal to someone to ask them out. |
-| delete  | | Deletes your profile and dumps your partner if they exist. |
-|  dump   | | Dumps your partner. |
-|  help   | | Shows available commands. |
-|   hug   | | Hugs your partner. Has 10% chance of having a special message added onto it. |
-|  kiss   | | Kisses your partner. Has 10% chance of having a special message added onto it. |
-| reject  | \<user> <ul><li>user -  mention a user to reject.</li></ul> | Rejects the user. Has 30% chance of adding an explanation that `<o/` is a dab. |
-|  steal  | \<user> <ul><li>user - mention a user to steal.</li></ul> | Attempts to steal a someone from their partner. <br> TL;DR: be a dick to increase your chances of stealing <br> Probability is determined by the following formula and dependent on the user's hidden stats: `probability = .01 + stolenCount / 500 + dateCount / 2000 + (rejectedYouCount + rejectedOthersCount) / 10000;` |
-|  view   | \<user> <ul><li>user - mention a user to view their profile.</li></ul> | View someone's profile. |
+| `change`  | `<category> <value>` <ul><li>`category` - a category can be one of the following: name, gender, age, description, hobbies, type, or sexuality.</li><li>`value` - the new value of the category. </li></ul> | Changes a category in your profile. |
+| `create`  | | Creates your profile by asking a few questions about you. |
+|  `date`   | `<user> <message?>`  <ul><li>`user` - mention a user to date. </li><li>`message` (optional) - Send a custom message with your proposal. Default is "Will you go out with me? 😘"</li></ul> | Creates a proposal to someone to ask them out. |
+| `delete`  | | Deletes your profile and dumps your partner if they exist. |
+|  `dump`   | | Dumps your partner. |
+|  `help`   | | Shows available commands. |
+|   `hug`   | | Hugs your partner. Has 10% chance of having a special message added onto it. |
+|  `kiss`   | | Kisses your partner. Has 10% chance of having a special message added onto it. |
+| `reject`  | `<user>` <ul><li>`user` -  mention a user to reject.</li></ul> | Rejects the user. Has 30% chance of adding an explanation that `<o/` is a dab. |
+|  `steal`  | `<user>` <ul><li>`user` - mention a user to steal.</li></ul> | Attempts to steal a someone from their partner. <br> TL;DR: be a dick to increase your chances of stealing <br> Probability is determined by the following formula and dependent on the user's hidden stats: `probability = .01 + stolenCount / 500 + dateCount / 2000 + (rejectedYouCount + rejectedOthersCount) / 10000;` |
+|  `view`   | `<user>` <ul><li>`user` - mention a user to view their profile.</li></ul> | View someone's profile. |
 
 ## Installation
 Type the following in command prompt:
