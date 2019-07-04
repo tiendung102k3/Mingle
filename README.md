@@ -4,6 +4,7 @@ Mingle allows you to build a your own dating profile on Discord and get started 
 
 
 This terrible bot was created for Discord Hack Week 2019 by me and submitted in the shitposting category.  
+Winners announced [here](https://blog.discordapp.com/discord-community-hack-week-category-winners-bd0364360f92).
 
 ## Commands
 Default prefix is `!` but can be changed in `config.js`.  
